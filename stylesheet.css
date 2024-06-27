@@ -51,7 +51,7 @@ body
     position: relative;
     height: 100vh;
     width:100% ;
-    background: url(Desktop.png)no-repeat;
+    background: url(gabie.png)no-repeat;
     justify-content: space-between;
     background-position:center;
     background-size:cover ;
@@ -255,98 +255,310 @@ animation-delay: calc(.2s*var(--i));
 .services-list div:hover{
     transform:translateY(-10px)
 }
-section{
-    display:flex;
-    flex-wrap: wrap;
-}
-.container1{
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
-}
-.heading1{
+
+
+
+
+.skills-section {
+    padding: 20px;
     text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom:50px;
 }
-.bar{
-    font-size: 23px;
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
-.Technical-bars .bar{
-    margin-top: 40px 0;
-}
-.Technical-bars .bar:first-child{
-    margin-top: 0;
-}
-.Technical-bars .bar:last-child{
-    margin-bottom: 0;
-}
-.Technical-bars .bar .info{
-    margin-bottom: 5px;
-}
-.Technical-bars .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-.Technical-bars .bar .progress-line{
-    position: relative;
-    border-radius: 10px;
+
+.technical-skills, .professional-skills {
+    max-width: 450px;
     width: 100%;
-    height: 5px;
-    background-color: #000000;
-    animation:animate 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleX(0);
-    transform-origin:left;
+}
+
+.technical-skills h3, .professional-skills h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill span {
+    width: 100px;
+    text-align: left;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #2b3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+
 
 }
-@keyframes animate {
-    100%{
-        transform: scaleX(1);
-    }
+
+.progress {
+    height: 100%;
+    background-color: #00d1d1;
+    animation: slideRight 1s ease forwards;
+}
+
+.percentage {
+    width: 50px;
+    text-align: right;
+}
+
+.skill-circle {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.skill-circle .circle {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#00d1d1 calc(var(--percentage) * 1%), #2b3e50 0%);
+    border-radius: 50%;
+    position: relative;
     
 }
-.Technical-bars .bar .progress-line span{
-    position: absolute;
-    border-radius: 10px;
-    height: 100%;
-    background-color: #0ef;
-    animation:animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleX(0);
-    transform-origin:left;
 
+.skill-circle .inner-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #0e192a;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 1.2em;
+    color: #00d1d1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
-.progress-line.html span{
-    width: 90%;
+
+.skill-circle span {
+    display: block;
+    margin-top: 10px;
 }
-.progress-line.css span{
-    width: 85%;
+
+
+
+
+
+.skills-section {
+    padding: 20px;
+    text-align: center;
 }
-.progress-line.javascript span{
-    width: 70%;
+
+.skills-section h2 {
+    font-size: 2.5em;
+    color: #00d1d1;
 }
-.progress-line.python span{
-    width: 80%;
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
-.progress-line.php span{
-    width: 75%;
+
+.technical-skills, .professional-skills {
+    max-width: 400px;
+    width: 100%;
 }
-.progress-line span ::after{
-    position:absolute;
-    padding: 1px 8px;
-    background-color: #0000;
-    color:#fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
+
+.technical-skills h3, .professional-skills h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-decoration: underline;
 }
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill span {
+    width: 100px;
+    text-align: left;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #2b3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #00d1d1;
+}
+
+.percentage {
+    width: 50px;
+    text-align: right;
+}
+
+.skill-circle {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.skill-circle .circle {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#00d1d1 calc(var(--percentage) * 1%), #2b3e50 0%);
+    border-radius: 50%;
+    position: relative;
+}
+
+.skill-circle .inner-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #0e192a;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 1.2em;
+    color: #00d1d1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.skill-circle span {
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e192a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    color: #00d1d1;
+}
+
+.contact-info h2 span {
+    color: #ffffff;
+}
+
+.contact-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #00d1d1;
+}
+
+.contact-info p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-details i {
+    margin-right: 10px;
+    color: #00d1d1;
+}
+
+.social-icons a {
+    color: #00d1d1;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2b3e50;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00d1d1;
+    color: #0e192a;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #00a5a5;
+}
+
+
+
+
 @keyframes slideRight {
     0%{
         transform:translateX(-100px) ;
